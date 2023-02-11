@@ -51,7 +51,7 @@ function draw(){
     strokeCap(ROUND);
     stroke(item.color);
     noFill();
-    arc(leftMarg,topMarg, diam + 50 * i ,diam + 50 * i ,radians(angleStart) + frameCount/30.0, radians(angleEnd) + frameCount/30.0);
+    arc(leftMarg,topMarg, diam + 50 * i ,diam + 50 * i ,angleStart + frameCount/30.0, angleEnd + frameCount/30.0);
     angleStart += itemAngle;
   }
    
